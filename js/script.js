@@ -143,7 +143,7 @@ window.addEventListener('DOMContentLoaded', () => {
       company: "Skillcraft Technology",
       duration: "(Aug 2024 – Sept 2024)",
       description: "Worked on backend development, optimized APIs, and contributed to a scalable web application using Python and Django. also worked on frontend development using React.js.",
-      image: "images/skillcraft_logo.jpg" // skillcraft Technology logo
+      image: "images/skill.jpg" // skillcraft Technology logo
     }
   ];
 
