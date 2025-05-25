@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Animate.css for transitions -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+ </head>
+
+<body>
+ <canvas id="spaceCanvas" style="position: fixed; top: 0; left: 0; z-index: -1;"></canvas>
+
+
+
+  <!-- Particles.js -->
+
+  <!--particle.js end here -->
+
+
+  <!-- Navbar -->
+  <nav class="navbar  navbar-expand-lg navbar-dark  fixed-top custom-navbar shadow-lg">
+  <div class="container" cl>
+    <a class="navbar-brand fw-bold brand-animate" href="https://www.linkedin.com/in/sumit-kumar2004">MyPortfolio</a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div id="navbarNav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link nav-link-animate" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-animate" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-animate" href="#skill">Skills</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-animate" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-animate" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link nav-link-animate" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <!-- Hero Section -->
+<section id="hero" class="hero-section d-flex align-items-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Left Content -->
+      <div class="col-md-6 text-white">
+        <h5 class="text-danger fw-bold mb-2">Hey! There </h5>
+        <h1 class="hero-title mb-3">
+          I Am <span class="typed-text text-gradient" id="typed-text"></span>
+        </h1>
+        <p class="text-light mb-4"> 
+       I’m Sumit Kumar, a curious and motivated tech enthusiast exploring multiple fields in development and technology.
+From web development to problem-solving, I enjoy learning and building projects that create real impact.
+Whether it's frontend, backend, or something entirely new — I'm always ready to take on challenges and grow.
+Let’s collaborate and build something meaningful together!
+        
+        </p>
+        <div class="d-flex gap-3 mb-4">
+          <a href="https://github.com/sumitkr-2" class="btn btn-danger px-4 py-2 rounded-pill transition">View Work</a>
+          <a href="https://www.linkedin.com/in/sumit-kumar2004" class="btn btn-outline-light px-4 py-2 rounded-pill transition">Hire Me</a>
+        </div>
+        <div class="d-flex gap-4 fs-4">
+          <a href="https://www.linkedin.com/in/sumit-kumar2004" class="text-white transition"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/sumitkr-2" class="text-white transition"><i class="fab fa-github"></i></a>
+          <a href="mailto:sumit.kumar120664@gmail.com" class="text-white transition"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+    <div class="col-md-6 text-center mt-4 mt-md-0">
+  <div class="hero-img-wrapper">
+    <img src="./assets/images/hero2.png" alt="Sumit" class="hero-img img-fluid" draggable="false">
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<!--hero section ends here -->
+  
+
+  <!-- Education Section -->
+<!-- Education Section Starts -->
+<section class="education-section py-5 " id="education">
+  <div class="edu-container container">
+   <div class="text-center mb-5 animate__animated animate__fadeInUp">
+  <h1 class="fw-bold">
+    <i class="fas fa-graduation-cap text-primary me-2"></i>
+    <span class="text-primary">Education</span>
+  </h1>
+  <div class="underline mx-auto mt-2"></div>
+</div>
+
+
+    <div class="row g-4">
+
+      <!-- Card 1: College -->
+      <div class="col-lg-6">
+        <div class="card education-card h-100 animate__animated animate__fadeInUp">
+          <div class="card-img-top-wrapper">
+            <img src="./assets/images/Collage.jpg" class="card-img-top" alt="College Image" draggable="false">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">B.Tech in Computer Science and Engineering</h5>
+            <p class="card-text">National Institute Of Technology Delhi (NITD)</p>
+            <p class="text-muted mb-0 text-white-override">2023 - 2027 | Pursuing</p>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: School -->
+      <div class="col-lg-6">
+        <div class="card education-card  h-100 animate__animated animate__fadeInUp">
+          <div class="card-img-top-wrapper">
+            <img src="./assets/images/rpvv.jpg" class="card-img-top" alt="School Image" draggable="false">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Senior Secondary | Science Stream</h5>
+            <p class="card-text">RPVV Lajpat Nagar, New Delhi | CBSE</p>
+            <p class="text-muted mb-0 text-white-override">2020 - 2022 | Completed</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Education Section Ends -->
+
+
+
+
+ <!-- Skill Section -->  
+<section id="skill" class=" text-center fade-in">
+  <div class="container">
+  <h2 class="section-title mb-4">
+  <i class="fas fa-tools text-primary me-2"></i>
+  Skills
+</h2>
+
+
+
+    <div id="cards-wrapper" class="position-relative">
+      <div id="cards-container" class="row g-4 overflow-hidden" style="max-height: 700px; transition: max-height 0.5s ease;">
+        <!-- Dynamic cards will be inserted here -->
+      </div>
+      <div class="mt-4">
+        <button id="toggle-button" class="btn btn-outline-primary">Show More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </div>
+  </section>
+  
+  
+  <!-- Experience Section -->
+<section class="experience-section py-5 " id="experience">
+  <div class="container">
+    <div class="text-center mb-5 animate__animated animate__fadeInUp">
+      <h1 class="fw-bold">
+        <i class="fas fa-briefcase text-primary me-2"></i>
+        <span class="text-primary">Experience</span>
+      </h1>
+      <div class="underline mx-auto mt-2"></div>
+    </div>
+
+    <div class="row g-4" id="experienceCardsContainer">
+      <!-- JavaScript will inject cards here -->
+    </div>
+  </div>
+</section>
+
+<!-- about section starts -->
+
+ <section class="about" id="about">
+  <div class="text-center my-5">
+  <h2 class="display-5 fw-bold heading text-primary">
+    <i class="fas fa-user-alt me-2"></i> About <span class="text-dark">Me</span>
+  </h2>
+  <hr class="w-25 mx-auto border-primary border-2 opacity-75">
+</div>
+
+    
+    <div class="row">
+
+    <div class="image">
+        <img draggable="false" class="tilt" src="./assets/images/sumit1.jpg" alt="">
+    </div>
+    <div class="content">
+        <h3>I'm Sumit Kumar</h3>
+        
+        
+        <p>I am a Full-Stack developer based in Delhi, India. 
+          I have a passion for creating innovative and user-friendly applications.
+          I am a quick learner and have a strong foundation in computer science and software engineering.
+        
+        <div class="box-container">
+            
+            <div class="box">
+              <p><span> email : </span> Sumit.kumar120664@gmail.com</p>
+              <p><span> place : </span> New Delhi, India - 110034</p>
+            </div>
+        </div>
+        
+        <div class="resumebtn">
+            <a href="https://docs.google.com/document/d/1pEAJdgXABvZVxebvnmGh8we4Jzh0d8ps5bqkYnmTqEU/edit?usp=sharing" target="_blank" class="btn"><span>Resume</span>
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </div>
+
+    </div>
+    </div>
+</section>
+<!-- about section ends -->
+
+  <!-- Contact Section -->
+ <!-- Contact Section -->
+<section id="contact" class="py-5 contact-section">
+  <div class="container">
+    <div class="card shadow-lg border-0 rounded-4 animate__animated animate__fadeInUp overflow-hidden" 
+         style="background: linear-gradient(135deg, rgba(138, 115, 255, 0.8), rgba(36, 59, 85, 0.85)); 
+                backdrop-filter: blur(10px); color: #f0f4f8; border: 1px solid rgba(138, 157, 253, 0.3); 
+                box-shadow: 0 0 20px rgba(138, 157, 253, 0.2);">
+      <div class="row g-0">
+
+        <!-- Image Section with transparent gradient -->
+        <div class="col-md-6 d-flex align-items-center justify-content-center p-4" 
+             style="background: rgba(18, 31, 61, 0.25); backdrop-filter: blur(6px);">
+          <img src="./assets/images/contact.gif" alt="Contact Illustration" class="img-fluid" 
+               style="max-height: 300px; filter: drop-shadow(0 0 10px #8a9dfd);">
+        </div>
+
+        <!-- Form Section -->
+        <div class="col-md-6 p-4">
+          <h2 class="fw-bold text-center mb-2" style="color: #c0bfff;">Get in Touch</h2>
+          <p class="text-center mb-4" style="color: #d3dce6;">Feel free to reach out for collaboration or just a friendly hello!</p>
+          <form id="contact-form" class="row g-3">
+
+            <div class="col-12">
+              <div class="input-group" style="border-radius: 6px; box-shadow: 0 0 10px #b49dfd;">
+                <span class="input-group-text" style="background-color: #5c4e8b; color: #f0f4f8;"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" name="entry.934545434" placeholder="Your Name" required 
+                       style="background-color: rgba(36, 59, 85, 0.6); color: #ffffff; border: none;">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="input-group" style="border-radius: 6px; box-shadow: 0 0 10px #b49dfd;">
+                <span class="input-group-text" style="background-color: #5c4e8b; color: #ffffff;"><i class="fas fa-envelope"></i></span>
+                <input type="email" class="form-control" name="entry.1488788960" placeholder="Your Email" required 
+                       style="background-color: rgba(36, 59, 85, 0.6); color: #ffffff; border: none;">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="input-group" style="border-radius: 6px; box-shadow: 0 0 10px #b49dfd;">
+                <span class="input-group-text" style="background-color: #5c4e8b; color: #ffffff;"><i class="fas fa-phone"></i></span>
+                <input type="text" class="form-control" name="entry.376984020" placeholder="Your Phone (optional)" 
+                       style="background-color: rgba(36, 59, 85, 0.6); color: #ffffff; border: none;">
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="input-group" style="border-radius: 6px; box-shadow: 0 0 10px #b49dfd;">
+                <span class="input-group-text" style="background-color: #5c4e8b; color: #ffffff;"><i class="fas fa-comment-dots"></i></span>
+                <textarea class="form-control" name="entry.1923624029" rows="4" placeholder="Your Message" required 
+                          style="background-color: rgba(36, 59, 85, 0.6); color: #ffffff; border: none;"></textarea>
+              </div>
+            </div>
+
+            <div class="col-12 text-end">
+              <button type="submit" class="btn px-4" 
+                      style="background-color: #826eff; border: none; box-shadow: 0 0 15px #b49dfd; color: #fff;">
+                Submit <i class="fas fa-paper-plane ms-2"></i>
+              </button>
+              <p id="form-status" class="mt-3 text-success" style="display:none;">Message sent successfully!</p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Footer -->
+   <footer class="contact-footer">
+  <div class="contact-container">
+    <h3>Contact Info</h3>
+
+    <div class="contact-item">
+      <i class="fas fa-phone-alt"></i>
+      <span>+91 999- XXX-7XX</span>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-envelope"></i>
+      <span>sumit.kumar120664@gmail.com</span>
+    </div>
+    <div class="contact-item">
+      <i class="fas fa-map-marker-alt"></i>
+      <span>New Delhi, India - 110034</span>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/sumit-kumar2004" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/sumitkr-2" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:sumit.kumar120664@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://twitter.com/collageuse2004" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://t.me/sumit_kr_2" target="_blank"><i class="fab fa-telegram-plane"></i></a>
+    </div>
+     <p id="copyright">© 2025 Sumit. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+</body>
+</html>
