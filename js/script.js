@@ -183,7 +183,7 @@ window.addEventListener('resize', resizeCanvas);
 
 // Stars with parallax depth
 const layers = [[], [], []];
-for (let i = 0; i < 300; i++) {
+for (let i = -1; i < 500; i++) {
   const layer = layers[Math.floor(Math.random() * layers.length)];
   layer.push({
     x: Math.random() * canvas.width,
@@ -278,7 +278,7 @@ function drawSatellites() {
     // Draw satellite
     ctx.beginPath();
     ctx.shadowColor = sat.color;
-    ctx.shadowBlur = 15;
+    ctx.shadowBlur = 5;
     ctx.fillStyle = sat.color;
     ctx.globalAlpha = 1;
     ctx.arc(x, y, sat.size, 0, 2 * Math.PI);
@@ -344,13 +344,13 @@ function draw(time) {
 
   // Background space gradient
   const bg = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
-  bg.addColorStop(0, '#000010');
+  bg.addColorStop(0, '#000000');
   bg.addColorStop(1, '#000000');
   ctx.fillStyle = bg;
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
   drawStars(time);
-  drawGalaxyCore();
+  // drawGalaxyCore();
   drawSatellites();
 drawFloatingImages();
 

@@ -298,7 +298,7 @@ html {
   overflow: hidden;
   color: white;
   font-weight: 400;
-  
+
   background-color: #fff;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
@@ -348,6 +348,9 @@ html {
 }
 
 
+.text-dark{
+  color: white !important;
+}
 .about .row {
   display: flex;
   flex-direction: row;
